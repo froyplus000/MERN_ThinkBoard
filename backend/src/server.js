@@ -11,6 +11,9 @@ import dotenv from "dotenv";
 dotenv.config();
 connectDB();
 
+// middleware
+app.use(express.json());
+
 // Routes Prefix
 app.use("/api/notes", notesRoutes);
 
